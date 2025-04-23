@@ -1,0 +1,15 @@
+@charset "UTF-8"
+ body {
+    background-color: rgb(110, 236, 129);
+    color: aqua;
+}
+
+a {
+    text-align: center;
+    color: black;
+
+}
+
+a:hover {
+    display: inline-block;
+}
