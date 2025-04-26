@@ -12,6 +12,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
@@ -19,9 +20,34 @@
             padding: 10px;
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
         thead, tfoot {
-            background-color: gray;
+            background-color: rgb(41, 39, 39);
             color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(41, 39, 39);
+        }
+
+        tbody > tr:nth-child(odd) { /*2n-1*/
+            background-color: white;
+        }
+
+        tbody > tr:nth-child(even) {
+            background-color: lightgray;
+        }
+
+        td.num {
+            text-align: right;
         }
     </style>
 </head>
@@ -30,6 +56,7 @@
     <!--
     anatomia para TABELAS GRANDES
     TABLE
+       CAPTION
       THEAD
           TR, TD, TH
       TBODY
@@ -38,25 +65,92 @@
           TR, TD, TH
     -->
           <table>
+            <caption>população das Unidades Federativas</caption>
             <thead>
                 <tr>
-                    <th>Estado</th>
-                    <th>população</th>
+                    <th scope="col">Estado</th>
+                    <th scope="col" style="width: 100px;">população</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td>são paulo</td>
-                    <td>45 973 194</td>
+                    <td class="num">45 973 194</td>
                 </tr>
-                
-            </tbody>
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td class="num">21 322 691	</td>
+                </tr>
+                <tr>
+                    <td>Rio de Janeiro</td>
+                    <td class="num">17 219 679</td>
+                </tr>
+                <tr>
+                    <td>Bahia</td>
+                    <td class="num">14 850 513	</td>
+                </tr>
+                <tr>
+                    <td>Paraná</td>
+                    <td class="num">11 824 665	</td>
+                </tr>
+                <tr>
+                    <td>Rio Grande do sul</td>
+                    <td class="num">11 229 915	</td>
+                </tr>
+                <tr>
+                    <td>Pernambuco</td>
+                    <td class="num">9 539 029	</td>
+                </tr>
+                <tr>
+                    <td>Ceará</td>
+                    <td class="num">9 233 656	</td>
+                </tr>
+                <tr>
+                    <td>Pará</td>
+                    <td class="num">8 664 306	</td>
+                </tr>
+                <tr>
+                    <td>Santa Catarina</td>
+                    <td class="num">8 058 441	</td>
+                </tr>
+                <tr>
+                    <td>rj</td>
+                </tr>
+                <tr>
+                    <td>sp</td>
+                </tr>
+                <tr>
+                    <td>pa</td>
+                </tr>
+                <tr>
+                    <td>ma</td>
+                </tr>
+                <tr>
+                    <td>sc</td>
+                </tr>
+                <tr>
+                    <td>pi</td>
+                </tr>
+                <tr>
+                    <td>bh</td>
+                </tr>
+                <tr>
+                    <td>mg</td>
+                </tr>
+                <tr>
+                    <td>sg</td>
+                </tr>
+                <tr>
+                    <td>pn</td>
+                </tr>
+            </tbody>    
             <tfoot>
                 <tr>
-                    <th>Total de Habitantes</th>
-                    <td>0000</td>
+                    <th scope="row">Total de Habitantes</th>
+                    <td><strong>0000</strong></td>
                 </tr>
-            </tfoot>
+            </tfoot>    
           </table>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, non porro in architecto voluptatibus, amet, fugiat ducimus vel dicta voluptas repudiandae animi voluptatem. Necessitatibus ad cupiditate quos optio excepturi nisi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae doloremque facere iusto voluptatem accusamus ipsam at eveniet reprehenderit sint, animi necessitatibus doloribus incidunt et ab sapiente qui mollitia. Pariatur, facere. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut excepturi eveniet et repellat sint aliquid repellendus quidem quo alias dolore quas explicabo dignissimos id architecto dolorem, aspernatur facilis nobis nam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda eum aperiam est veritatis consectetur eveniet explicabo fuga facilis natus corporis, tenetur earum ipsam voluptates aut, accusamus similique laboriosam recusandae. Quidem? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem recusandae voluptatibus repudiandae amet dolorum? Saepe velit nesciunt porro accusantium laborum nam, voluptas fugiat similique quaerat cupiditate, expedita quos repellat ratione. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo reprehenderit voluptates et quidem rerum reiciendis, esse minima alias quis ex aut dolorem quisquam omnis nesciunt. Excepturi, nobis. Cupiditate, consequatur reprehenderit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, cum mollitia? Obcaecati quibusdam reiciendis amet voluptates nihil mollitia quaerat iusto, ipsa, adipisci ea dolore! Quidem praesentium asperiores eaque voluptatum saepe! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed iste voluptates cumque neque dolor repellat ipsam delectus dolores possimus non provident autem quae officia, sunt cupiditate. Suscipit necessitatibus deserunt ipsum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quas repellendus id voluptatem deserunt odit, ipsam laborum! Aperiam delectus ad facere temporibus accusamus ex, laborum doloremque, dolorem molestias quasi vitae? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam et, inventore error perspiciatis delectus sed vel illum eos consequuntur consectetur repellat, minima aliquam voluptate tenetur perferendis aliquid tempore magnam at? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit voluptatum explicabo corrupti, reprehenderit dolor delectus incidunt consequatur rerum commodi, obcaecati ut officia ullam quisquam, aliquid iste distinctio. Natus, dolorum assumenda. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut optio, in labore enim quaerat iusto voluptatum odio. Ullam assumenda, magni itaque, molestias nisi aliquid sunt dolore nesciunt distinctio, quas fugiat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt repellat excepturi porro saepe incidunt tenetur, blanditiis enim quis dolores neque expedita rem voluptas veritatis sint. Ab molestiae perferendis cumque quas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus inventore veniam adipisci corrupti laboriosam magnam natus quam, sed repellat consequuntur debitis animi officia numquam perferendis laborum nostrum, cumque vero dolore. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis rerum enim repellat sunt sequi. Cumque, qui quis, eveniet est temporibus explicabo aut corrupti incidunt officia illo odio eaque doloremque fugit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate obcaecati voluptas voluptatem animi, rem itaque harum corrupti reprehenderit ullam veritatis. Quo corporis ad fugiat dolorum alias vero tempore minus obcaecati. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae architecto hic velit harum pariatur eum sit modi accusamus est nesciunt, laborum, et aut optio facere voluptates esse nulla quo. Deserunt! Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias cumque laudantium aliquid officiis, assumenda at excepturi repudiandae quisquam sed maxime provident sequi velit facilis, error mollitia? Enim rerum vel nihil!</p>
 </body> 
 </html>
