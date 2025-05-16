@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+/* Typical Device Dreakpoints
+pequenas telas: até 600px
+Celular: de 600px até 768px
+Tablet: 768px até 1024px
+Desktop: 1025px até 1440-px
+Grandes Telas: acima de 1441px
+*/
+
+@media screen and (min-width: 768px) {
+    span#burguer {
+        display: none;
+    }
+
+    menu {
+        display: block;
+    }
+
+    menu > ul > li {
+        display: inline-block;
+    }
+
+    main {
+        width: 768px;
+    }
+}
